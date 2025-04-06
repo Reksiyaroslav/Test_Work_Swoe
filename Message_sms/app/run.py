@@ -14,6 +14,7 @@ def main():
         config = toml.load(f)
 
     url_server = config["server"]["host"]
+    #host_server = config["server"]["host1"] для servera 
     port_server = config["server"]["port"]
     user_server = config["user"]["USER_NAME"]
     password_server = config["user"]["PASSWORD_USER"]
@@ -21,6 +22,9 @@ def main():
     response = fun.create_numbers_and_message(
         url=url_server, port=port_server, username=user_server, password=password_server
     )
+    #response = fun.create_numbers_and_message(
+        #url=host_server, port=port_server, username=user_server, password=password_server
+    #) 
 
     if response is not None:
         print(f"Код ответа: {response.status_code}")

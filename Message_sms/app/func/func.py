@@ -44,7 +44,7 @@ def create_numbers_and_message(url, port, username, password) -> HTTPResponse:
                         if url.scheme == "https":
                             context = ssl.create_default_context()
                             sock = context.wrap_socket(
-                             sock, server_hostname=url
+                        sock, server_hostname=url
                             )
                         # Чтение ответа
                         response = b""

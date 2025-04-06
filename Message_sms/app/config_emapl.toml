@@ -1,7 +1,7 @@
 [server]
-#host = "http://localhost:4010"
-host = "127.0.0.1"
-port = 8080
+host = "http://localhost:4010"
+host1 = "127.0.0.1" это для servera 
+port = 4010
 [user]
 USER_NAME = "admin
 PASSWORD_USER = "admin324
